@@ -1,0 +1,13 @@
+{
+    "name": "mhaoxyz/aliyuncs-sms",
+    "type": "library",
+    "license": "0.0",
+    "authors": [
+        {
+            "name": "menghao",
+            "email": "mhaoxyz@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
