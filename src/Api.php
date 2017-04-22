@@ -24,7 +24,7 @@ class Api
 
     // Not important
 
-    protected $region_id = 'cn-hangzhou';
+    protected $region_id ;
 
     public function __construct($access_key_id, $access_key_secret)
     {
@@ -58,9 +58,9 @@ class Api
             "SignatureNonce" => $this->signature_nonce,
         ];
 
-//        if (isset($this->region_id)) {
+        if (isset($this->region_id)) {
             $params["RegionId"] = $this->getRegionId();
-//        }
+        }
 
         $params = array_merge($params, $others);
 
