@@ -5,7 +5,7 @@ class ExampleTest extends PHPUnit_Framework_TestCase
 
     public function test()
     {
-        $sms = new \Mhaoxyz\Aliyuncs\SMS\SMS('LTAIrRypAED1m2Hc', '2QNLgLOKaRt7RBdcooI1ZLGVHtojcd');
+        $sms = new \Mhaoxyz\Aliyuncs\SMS\SMS('app_id', 'key');
         $sms->setSignName('麦瑟科技');
         $sms->setTemplateCode('SMS_56665455');
         $sms->setParamStrings([

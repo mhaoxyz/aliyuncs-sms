@@ -28,7 +28,7 @@ class Api
 
     public function __construct($access_key_id, $access_key_secret)
     {
-        $this->timestamp = date('Y-m-d\TH:i:s\Z');
+        $this->timestamp = gmdate('Y-m-d\TH:i:s\Z');
         $this->signature_nonce = md5(time() . rand(0, 9999));
 //        $this->signature_nonce = '9e030f6b-03a2-40f0-a6ba-157d44532fd0';
 
